@@ -1,0 +1,41 @@
+<p>
+  {{title}}
+</p>
+
+<!-- property binding işlemi interpolation -->
+
+<button (click)="click()">Tıkla</button>
+<!-- event binding -->
+
+<br>
+
+<!-- ngModel kullanımı -->
+<input type="checkbox" [(ngModel)]="visible" />
+
+<!-- input değişkenlerin takibi -->
+Durum {{visible}}
+<br>
+
+<input [(ngModel)]="note" type="text" />
+<br>
+<!-- input değişkenlerin takibi -->
+Notlar <p *ngIf="visible"> {{note}} {{note.length}} karakter yazıldı. </p>
+
+<!-- *ngIf ile doma append veya domdan remove -->
+<!-- ngModel ile two way binding yapıyoruz. -->
+
+<!-- default component, selectoru vardır ve htmlden selector ismine göre çağırılır -->
+<app-test title="title-1" [config]="{key:'123232'}" (onClick)="showMessage($event)"></app-test>
+<app-test [title]="title" (onClick)="showMessage($event)"></app-test>
+<!-- dynamic değer gönderme yöntemi -->
+<!-- componentleri initial değerler vererek özeleştirmemizi sağlar. -->
+
+<p textHighligt bgColor="bg-lg-blue">p1</p>
+<p textHighligt>p2</p>
+<div textHighligt bgColor="bg-dark-blue">Div1</div>
+
+<!-- <app-home></app-home> -->
+
+<hr>
+
+<app-pipe-test></app-pipe-test>

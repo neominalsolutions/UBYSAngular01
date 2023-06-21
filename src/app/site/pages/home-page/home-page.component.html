@@ -1,0 +1,38 @@
+<p>home-page works!</p>
+<!-- 
+<page-breadcrum [link]="/sdsad/adssad"></page-breadcrum> -->
+
+<!-- <header></header> -->
+
+<p (mousemove)="onMouseMove($event)">
+  Örnek
+</p>
+
+<!-- angular element id vermek yerine #ile id tanımı yapıyoruz, angularda buna template ref diyoruz -->
+<input #inpt />
+
+
+<br>
+
+<input type="numeric" [(ngModel)]="min" placeholder="max değer" />
+<input type="numeric" [(ngModel)]="max" placeholder="min değer" />
+
+<!-- ngOnChanges üst component üzerinden veri değişiminin alt component içerisinde takibi için kullanıla bir hook -->
+
+<h1>Value Types Örnek</h1>
+
+<value-types-on-changes [minValue]="min" [maxValue]="max"></value-types-on-changes>
+
+<hr>
+
+<h1>Referans Type Örnek</h1>
+
+<input #inpt2 placeholder="isim giriniz" />
+<button (click)="add(inpt2)">Ekle</button>
+
+<app-ref-types-on-changes [names]="names" [currentUser]="currentUser"></app-ref-types-on-changes>
+
+
+<!-- <app-table></app-table> -->
+
+<!-- <app-save-button></app-save-button> -->

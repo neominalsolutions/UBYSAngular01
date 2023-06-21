@@ -1,0 +1,16 @@
+<!-- @foreach(var item ) -->
+
+<!-- *ngIf, *ngFor -->
+<!-- structural directive -->
+<!-- domdan bir nesne çıkışı remove yada doma bir nesne girişi yani append işlemleri yapıyor. -->
+
+<div *ngIf="currentUser">
+  {{currentUser.name}}
+</div>
+
+
+<ul>
+  <li *ngFor="let name of names">
+    {{name}}
+  </li>
+</ul>

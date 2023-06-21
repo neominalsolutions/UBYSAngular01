@@ -9,6 +9,7 @@ import { TextHighligtDirective } from './shared/directives/text-highligt.directi
 import { BgColorDirective } from './shared/directives/bg-color.directive';
 import { PipeTestComponent } from './shared/components/pipe-test/pipe-test.component';
 import { OrderStatusPipe } from './shared/pipes/order-status.pipe';
+import { AppMainComponent } from './shared/components/app-main/app-main.component';
 
 // annotatios class özellik kazanıyor.
 // Components User Control yada Partial Html, View Component gibi düşünebiliriz.
@@ -24,6 +25,7 @@ import { OrderStatusPipe } from './shared/pipes/order-status.pipe';
     BgColorDirective,
     PipeTestComponent,
     OrderStatusPipe,
+    AppMainComponent,
   ],
   imports: [
     // 3rd Paketleri npmden yüklediğimiz paketleri uygulamada kullanmamızı sağlayn kısım.
