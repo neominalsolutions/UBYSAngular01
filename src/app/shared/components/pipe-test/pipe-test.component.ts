@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { OrderStatusPipe } from '../order-status.pipe';
+import { OrderStatusPipe } from '../../pipes/order-status.pipe';
 
 export interface Order {
   orderStatus: number; // Submitted 100, 200: Invoide, 300:Shipped

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Config } from './test/test.component';
+import { Config } from './shared/components/test/test.component';
 
 @Component({
   selector: 'app-root', // componentin html üzerinden çağırıldığı isim.

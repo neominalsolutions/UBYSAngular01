@@ -4,11 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { TestComponent } from './test/test.component';
-import { TextHighligtDirective } from './text-highligt.directive';
-import { BgColorDirective } from './bg-color.directive';
-import { PipeTestComponent } from './pipe-test/pipe-test.component';
-import { OrderStatusPipe } from './order-status.pipe';
+import { TestComponent } from './shared/components/test/test.component';
+import { TextHighligtDirective } from './shared/directives/text-highligt.directive';
+import { BgColorDirective } from './shared/directives/bg-color.directive';
+import { PipeTestComponent } from './shared/components/pipe-test/pipe-test.component';
+import { OrderStatusPipe } from './shared/pipes/order-status.pipe';
 
 // annotatios class özellik kazanıyor.
 // Components User Control yada Partial Html, View Component gibi düşünebiliriz.
