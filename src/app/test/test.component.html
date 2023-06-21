@@ -1,0 +1,10 @@
+<p>{{title}}</p>
+
+<!-- undefined olan nesnelerin arayüzde propertylerini göstermek template de bozulamalara hata mesajalarına sebebiyet verebilir. Böyle durumlar için *ngIf ile template koruyabiliriz. -->
+<div *ngIf="config">
+  {{config.key}}
+</div>
+
+
+
+<button (click)="click()">Click</button>

@@ -1,0 +1,18 @@
+<div>
+
+  <p>
+    Order Date: {{order.orderDate | date:'shortDate'}}
+  </p>
+  <p>
+    Customer: {{order.customerFirstName | titlecase}} {{order.customerLastName | uppercase}}
+  </p>
+  <p>
+    <!-- {{order.orderTotal | number }} -->
+    Order Total : {{ order.orderTotal | currency: order.currency}}
+  </p>
+
+  <p>
+    Order Status : {{order.orderStatus | orderStatus}}
+  </p>
+
+</div>
